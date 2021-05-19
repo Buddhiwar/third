@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<style>
+				#pipe
+				{
+					width:100vw;
+					height:5px;
+					background-color:white;
+					position:relative;
+					margin-top:200px;
+				}
+				
+				#ball
+				{
+					width:50px;
+					height:50px;
+					background-color:brown;
+					position:absolute;
+					border-radius:50%;
+					margin-top:-50px;
+					animation-name: ball;
+					animation-duration: 20s;					
+					animation-timing-function:linear;
+					animation-iteration-count:infinite;
+				}
+				@keyframes ball{
+					0%{ color:green; left: 0px; top: 0px;}
+					100%{color:red; left: 100%; top: 0;}
+					}
+					
+					img
+					{
+						width:100px;
+						height:100px;
+						position:absolute;
+						margin-top:-100px;
+						margin-left:100vw;
+						animation-name: car;
+					animation-duration: 20s;					
+					animation-timing-function:linear;
+					animation-iteration-count:infinite;
+					}
+					@keyframes car{
+					0%{  left: 0px; top: 0px;}
+					100%{ left: -100%; top: 0;}
+					}
+			</style>
+		</head>
+		<body bgcolor="black">
+		<div id="pipe">
+			<img src="E:\my dream project\pic\car.png"/>
+			<div id="ball">
+			</div>
+			
+		</div>
+		</body>
+	</html>
